@@ -1,0 +1,20 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^17.0.35",
+    "lerna": "^4.0.0",
+    "typescript": "^4.6.4"
+  },
+  "packages": [
+    "packages/*"
+  ],
+  "version": "0.0.0",
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "bootstrap": "lerna bootstrap --hoist",
+    "start": "lerna run start --stream",
+    "tsc": "lerna run tsc --stream",
+    "watch": "lerna run watch --stream"
+  }
+}
