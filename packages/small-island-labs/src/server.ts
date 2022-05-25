@@ -1,15 +1,15 @@
 import express from "express";
+import dotenv from "dotenv";
 import { HelloWorld } from "@small-island-projects/small-island-components/lib/esm/index.js";
 
+dotenv.config();
 const app = express();
-
-const port = 3000;
+const port = process.env.PORT;
 
 app.get("/", (req, res) => {
-  console.log(`😀`, HelloWorld);
   res.send(HelloWorld());
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`[server]: Server is running at https://localhost:${port}`);
 });
