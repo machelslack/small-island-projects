@@ -4,6 +4,11 @@
     "rootDir": "./src",
     "outDir": "./lib/esm",
     "module": "ES2020",
+    "jsx": "preserve",
+    "jsxImportSource": "@emotion/react",
+    "types": [
+      "node"
+    ],
     "lib": [
       "dom",
       "dom.iterable",
@@ -12,13 +17,17 @@
     "noEmit": true,
     "incremental": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve"
+    "isolatedModules": true
   },
   "include": [
     "src/**/*"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "lib",
+    "stories",
+    "**/*.stories.tsx",
+    "**.test.ts",
+    "**.test.tsx"
   ]
 }

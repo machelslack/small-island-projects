@@ -1,1 +1,1 @@
-export { default as HelloWorld } from "./components/hello-world.js";
+export { pageRenderer } from "./components/renderer/index.js";

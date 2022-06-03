@@ -13,5 +13,6 @@
     "preserveSymlinks": true,
     "sourceMap": true,
     "skipLibCheck": true
-  }
+  },
+  "exclude": ["node_modules", "lib", "**/*.stories.tsx"]
 }
