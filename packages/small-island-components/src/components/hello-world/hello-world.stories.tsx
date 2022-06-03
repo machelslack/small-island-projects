@@ -1,6 +1,11 @@
 import React from "react";
 import { ButtonComponent } from "./hello-world";
 
-const ButtonComponentTemplate = (args) => <ButtonComponent />;
+export default {
+  component: ButtonComponent,
+  title: "Button",
+};
+
+const ButtonComponentTemplate = () => <ButtonComponent />;
 
 export const Button = ButtonComponentTemplate.bind({});

@@ -12,4 +12,9 @@ const Button = styled.button`
   }
 `;
 
-export const ButtonComponent =  () => <Button>{'This is a button to click'}</Button>;
+export const ButtonComponent = () => (
+  <>
+    <span>{"This is a span element"}</span>
+    <Button>{"This is a button to click"}</Button>
+  </>
+);
