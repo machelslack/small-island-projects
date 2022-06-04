@@ -2,7 +2,7 @@ import { CacheProvider } from "@emotion/react";
 import { renderToString } from "react-dom/server";
 import createEmotionServer from "@emotion/server/create-instance";
 import createCache from "@emotion/cache";
-import { ButtonComponent } from "../hello-world/hello-world";
+import ButtonComponent from "../hello-world/hello-world";
 
 const key = "custom";
 const cache = createCache({ key });
